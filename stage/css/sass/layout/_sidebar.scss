@@ -11,5 +11,8 @@
         padding: 15px;
         float:right;
         transition: .3s;
+        &.no-sidebar{
+            left: -250px;
+        }
     }
 }

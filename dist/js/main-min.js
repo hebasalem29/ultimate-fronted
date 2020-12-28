@@ -1,1 +1,1 @@
-var map=new map,set=new set;
+$(function(){"use strict";$(".toggle-sidebar").on("click",function(){$(".content-bar, .sidebar").toggleClass("no-sidebar")})});var map=new map,set=new set;
