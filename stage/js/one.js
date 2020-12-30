@@ -1,1 +1,1 @@
-var map=new map();
+ 

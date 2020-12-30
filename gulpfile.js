@@ -12,7 +12,7 @@ gulp.task('html',function() {
     return gulp.src('stage/html/*.pug')
     .pipe(pug({pretty:true}))
     .pipe(gulp.dest('dist'))
-    .pipe(livereload())
+    .pipe(livereload());
 
 });
 gulp.task('css',function() {

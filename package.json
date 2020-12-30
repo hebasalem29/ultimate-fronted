@@ -19,7 +19,14 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-watch": "^5.0.1",
+    "jquery": "^3.5.1",
     "static-server": "^2.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ]
 }

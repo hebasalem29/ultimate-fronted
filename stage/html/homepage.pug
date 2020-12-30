@@ -2,17 +2,15 @@
 <!DOCTYPE html>
 html(lang="en")
   head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title #{pageTitle}
+    include pug/layout/metas
     include pug/layout/styles
   body
     .page.home-page 
       include pug/layout/sidebar
       .content-area 
-        include pug/layout/header.pug
+        include pug/layout/header
 
-h1 #{pageTitle}
+        h1 #{pageTitle}
     include pug/layout/scripts
 
 
