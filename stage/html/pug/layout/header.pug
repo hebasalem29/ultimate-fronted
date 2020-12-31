@@ -1,7 +1,28 @@
 .header
   i.fas.fa-users.toggle-sidebar
   .dropdown.notification-container
-      i.fas.fa-bell.fa-lg.toggle-not#notifications( data-bs-toggle="dropdown" aria-expanded="false")
+      i.fas.fa-bell.fa-lg.header-icon.toggle-not#notifications( data-bs-toggle="dropdown" aria-expanded="false")
         
       .dropdown-menu(aria-labelledby="notifications")
-         |notifications
+        .noti-header notifications
+          span 50
+        .noti-content
+          ul.list-unstyled 
+            li
+              i.fas.fa-envelope-open.fa-lg
+              |you have email
+            li
+              i.fas.fa-money-bill.fa-lg
+              |you have money
+            li
+              i.fas.fa-thumbs-up.fa-lg
+              |you have thumbs
+            li
+              i.fas.fa-envelope-open.fa-lg
+              |you have message
+            li
+              i.fas.fa-money-bill.fa-lg
+              |you have money      
+
+        .noti-foot: a(href="#") view all notifications
+      i.fas.fa-expand.fa-lg.toggle-fullscreen.header-icon  
