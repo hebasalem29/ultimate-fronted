@@ -3,7 +3,7 @@
     background-color: #fff;
     padding: 15px;
     padding: 15px;
-    margin-left: 250px;
+    margin-left: 0px;
     .header-icon{
 
    padding: 10px;
@@ -13,8 +13,13 @@
         cursor: pointer;
         margin-left: 10px;
     }
-    .toggle-class{
+    
+    .toggle-sidebar{
         cursor: pointer;
+        &:hover
+        {
+            color: #27ae60;
+        }
     }
     .notification-container
     {
