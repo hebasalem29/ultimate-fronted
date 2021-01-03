@@ -3,7 +3,8 @@ $(function()
     "use strict";
     $(".toggle-sidebar").on("click",function()
     {
-        $(".content-bar, .sidebar").toggleClass("no-sidebar");
+        $(".content-area").toggleClass("no-sidebar");
+        $(".sidebar").toggleClass("no-sidebar");
     });
     $(".toggle-submenue").on("click",function()
     {
@@ -27,6 +28,25 @@ else
 
 
     });
+    $(".toggle-settings").on("click",function()
+    {
+      
+      $(this).parent().toggleClass("hide-settings");
+    });
+    var themeclasses =[];
+  $(".color-options li").each(function()
+  {
+    themeclasses.push($(this).data("theme"));
+  });
+
+$(".color-options li").on("click",function()
+{
+    $("body").removeClass(themeclasses.join(" "))
+    .addClass($(this).data("theme"));
+});
+
+
+    
 });
 var elem = document.documentElement;
 

@@ -22,11 +22,26 @@ font-family: 'Open Sans', sans-serif;
         min-height: 100%;
         transition: .3s;
         background-color: #f2f1f6;
+        margin-left: 250px;
 
         will-change: width;
         &.no-sidebar
         {
             width: 100%;
+            margin-left: 0px;
+        }
+    }
+    .page-head
+    {
+        margin-top: 20px;
+        padding: 20px;
+        .page-title
+        {
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .page-description{
+
         }
     }
 }
