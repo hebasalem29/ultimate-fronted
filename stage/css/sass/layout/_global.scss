@@ -12,6 +12,22 @@ body
 {
 min-height: 100vh;
 font-family: 'Open Sans', sans-serif;
+&.open
+{
+     font-family: 'Open Sans', sans-serif;
+}
+&.puplic
+{
+    font-family: 'Public Sans', sans-serif;
+}
+&.roboto
+{font-family: 'Roboto', sans-serif;
+}
+&.source
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 }
 .page
 {

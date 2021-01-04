@@ -60,6 +60,13 @@ margin-bottom: 30px;
               {
                   padding-left: 25px;;
               }
+              &.active{
+                  &:before
+                  {
+                      border-color: #ffc107;
+                  }
+
+              }
              
                
             

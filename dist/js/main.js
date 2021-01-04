@@ -45,7 +45,17 @@ $(".color-options li").on("click",function()
     .addClass($(this).data("theme"));
 });
 
-
+ var fontclasses=[];
+ $(".font-options select option").each(function()
+ {
+   fontclasses.push($(this).val());
+ });
+ $(".font-options select").on("change",function()
+ {
+   $("body").removeClass(fontclasses.join(" "));
+   
+   $("body").addClass($(this).find("option:selected").val());
+ })
     
 });
 var elem = document.documentElement;

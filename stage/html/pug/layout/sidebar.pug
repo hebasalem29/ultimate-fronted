@@ -1,7 +1,7 @@
 .sidebar 
   .logo-area.text-center elzero
   ul.links-area.list-unstyled
-    li: a(href="#") homepage
+    li: a(href="homepage.html" class=pageTitle==="homepage"?'active':'') homepage
     li
       a(href="#") 
        |forms
@@ -18,7 +18,7 @@
       ul.child-links.list-unstyled.hide
         li: a(href="#") loading
         li: a(href="#")  breadcrumbs
-         
+    li: a(href="charts.html" class=pageTitle==="charts"?'active':'') charts     
 
 
 
